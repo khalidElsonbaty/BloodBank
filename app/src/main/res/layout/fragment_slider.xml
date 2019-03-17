@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.activity.SplashActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slider_Fragment_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/slider_Fragment_Circleindicator_Id"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingTop="15dp"
+        android:layout_above="@id/slider_Fragment_Skip_Btn"
+        />
+
+
+    <Button
+        android:id="@+id/slider_Fragment_Skip_Btn"
+        android:layout_alignParentBottom="true"
+        android:text="@string/skip"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

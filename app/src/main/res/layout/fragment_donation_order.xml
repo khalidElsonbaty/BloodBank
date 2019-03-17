@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.fragment.homeCycle.DonationOrderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cairo"
+                android:text="@string/donation_order_address"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/Donation_Order_Name_Et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint="@string/donation_order_name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/Donation_Order_Age_Et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint="@string/donation_order_age"
+                android:inputType="number" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner"
+                >
+                <Spinner
+                    android:id="@+id/Donation_Order_BloodType_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:focusableInTouchMode="false"
+                    android:layoutDirection="rtl"
+                    />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Donation_Order_Bags_Et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint="@string/donation_order_bags"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/Donation_Order_Hospital_Name_Et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint="@string/donation_order_hospital"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Donation_Order_Hospital_Address_Et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/edittext_rounded_corner"
+                    android:hint="@string/donation_order_hospital_address"
+                    android:inputType="text" />
+
+                <Button
+                    android:id="@+id/Donation_Order_Hospital_Location_Btn"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_add_location_black_24dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner">
+
+                <Spinner
+                    android:id="@+id/Donation_Order_Countries_Spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:layoutDirection="rtl"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner">
+
+                <Spinner
+                    android:id="@+id/Donation_Order_Cities_Spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:layoutDirection="rtl"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Donation_Order_Phone_Et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint="@string/donation_order_phone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/Donation_Order_Notes_Et"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint="@string/donation_order_note"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:id="@+id/Donation_Order_Send_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#3CB371"
+            android:text="@string/donation_order_send"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

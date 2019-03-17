@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+        <ImageView
+            android:id="@+id/item_Notification_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_drawer_notifications"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:id="@+id/item_Notification_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:text="عنوان الطلب"
+            android:textSize="20dp"
+            android:fontFamily="@font/cairo"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/item_Notification_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:text="بيانات الاشعار"
+            android:textSize="20dp"
+            android:fontFamily="@font/cairo"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

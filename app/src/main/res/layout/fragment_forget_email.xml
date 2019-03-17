@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.fragment.registerCycle.ForgetEmailFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+    <ImageView
+        android:id="@+id/img_forget_email"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_logo"/>
+    <EditText
+        android:id="@+id/Forget_Email_Phone_Et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_forget_email"
+        android:hint="رقم الجوال"
+        android:background="@drawable/edittext_rounded_corner"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textAlignment="viewEnd"
+        />
+    <Button
+        android:id="@+id/Forget_Email_send_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Forget_Email_Phone_Et"
+        android:layout_marginTop="20dp"
+        android:text="ارسال"
+
+        android:textStyle="bold"
+        android:background="#3CB371"/>
+</RelativeLayout>
+
+</RelativeLayout>

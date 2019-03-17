@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_information"
+        android:icon="@drawable/ic_drawer_iformation"
+        android:title="معلوماتي"/>
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_drawer_notifications"
+        android:title="اعدادات الاشعارات"/>
+    <item
+        android:id="@+id/nav_favorite"
+        android:icon="@drawable/ic_drawer_favorite"
+        android:title="المفضله"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_drawer_home"
+        android:title="الرئيسيه"/>
+    <item
+        android:id="@+id/nav_rule"
+        android:icon="@drawable/ic_drawer_assignment"
+        android:title="تعليمات الاستخدام"/>
+    <item
+        android:id="@+id/nav_dail_up"
+        android:icon="@drawable/ic_drawer_mail"
+        android:title="تواصل معنا"/>
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_drawer_about"
+        android:title="عن التطبيق"/>
+    <item
+        android:id="@+id/nav_sign_up"
+        android:icon="@drawable/ic_drawer_exit"
+        android:title="تسجيل خروج"/>
+
+
+</menu>
